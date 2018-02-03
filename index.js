@@ -54,8 +54,11 @@ const  generateId = () => {
 }
 app.post('/api/persons', (req, res) => {
   const body = req.body
-  if(body.name === undefined ) {
-    return res.status(400).json({error: 'name missing'})
+  if(body.name === undefined || body.number === undefined ) {
+    return res.status(400).json({error: 'name or number missing'})
+  }
+  if(persons.find(x => x.name === body.name)) {
+    return res.status(400).json({error: "Name is already in the list"})
   }
   const person = {
     name: body.name,
