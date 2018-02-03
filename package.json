@@ -1,0 +1,27 @@
+{
+  "name": "puhelinluettelo_backend",
+  "version": "0.0.1",
+  "description": "\"HY Fullstack kurssin tehtävä\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"ERROR: No test \\\" && exit 1",
+    "start": "node index.js",
+    "watch": "node_modules/.bin/nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antiik91/puhelinluettelo_backend.git"
+  },
+  "author": "Janne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Antiik91/puhelinluettelo_backend/issues"
+  },
+  "homepage": "https://github.com/Antiik91/puhelinluettelo_backend#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
